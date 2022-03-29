@@ -4,15 +4,20 @@ try:
     value_2 = float(input("Введи второе число: "))
 
     if input_case == '1':
-        print(value_1 + value_2)
+        sign = '+'
+        result = value_1 + value_2
     elif input_case == '2':
-        print(value_1 - value_2)
+        sign = '-'
+        result = value_1 - value_2
     elif input_case == '3':
-        print(value_1 * value_2)
+        sign = '*'
+        result = value_1 * value_2
     elif input_case == '4':
-        print(value_1 / value_2)
+        sign = '/'
+        result = value_1 / value_2
     else:
         print("!!!Такой операции нет!!!")
+    print(f'{value_1} {sign} {value_2} = {result}')
 except ValueError:
     print("!!!Введи числовое значение цифрами!!!")
 except ZeroDivisionError:
