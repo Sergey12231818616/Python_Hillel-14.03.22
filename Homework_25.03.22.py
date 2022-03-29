@@ -3,7 +3,7 @@
 #  в противном случае - противоположне value число
 
 value = 120
-new_value = int(value/2) if value < 100 else int(-value)
+new_value = value/2 if value < 100 else -value
 print(new_value)
 
 # 2) У вас есть переменная value, тип - int. Написать тернарный оператор для переменной new_value по такому правилу:
@@ -23,16 +23,22 @@ print(new_value)
 # 4) У вас есть переменная my_str, тип - str. Если ее длинна меньше 5, то допишите в конец строки себя же.
 # Пример: было - "qwer", стало - "qwerqwer". Если длинна не меньше 5, то оставить строку как есть.
 #
-my_str = "qwety"
-new_str = my_str[::-1] if len(my_str) < 5 else my_str
-print(new_str)
+my_str = "qwh"
+if len(my_str) < 5:
+    my_str += my_str
+else :
+    my_str
+print(my_str)
 
 # 5) У вас есть переменная my_str, тип - str. Если ее длинна меньше 5, то допишите в конец строки перевернутую себя же.
 # Пример: было - "qwer", стало - "qwerrewq". Если длинна не меньше 5, то оставить строку как есть.
 #
-my_str = "qwe"
-new_str = my_str + my_str[::-1] if len(my_str) < 5 else my_str
-print(new_str)
+my_str = "qwj"
+if len(my_str) < 5:
+    my_str = my_str + my_str[::-1]
+else:
+    my_str
+print(my_str)
 
 # 6) Доработать задание с калькулятором, чтобы в конце вычисления у пользователя спрашивало, нужен ли калькулятор еще.
 # И если да, то запустить вычисление заново
