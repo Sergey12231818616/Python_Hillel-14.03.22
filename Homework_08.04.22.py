@@ -5,37 +5,37 @@
 # Если на четном - оставить без изменения.
 # Задание сделать с использованием enumerate или range.
 
-# my_list = ['abs', '123', 'efd', 'dfdf', 'ffwef']
-# new_list = []
-# for index, item in enumerate(my_list):
-#     if index % 2 != 0:
-#         new_list.append(item[::-1])
-#     else:
-#         new_list.append(item)
-# print(new_list)
+my_list = ['abs', '123', 'efd', 'dfdf', 'ffwef']
+new_list = []
+for index, item in enumerate(my_list):
+    if index % 2 != 0:
+        new_list.append(item[::-1])
+    else:
+        new_list.append(item)
+print(new_list)
 
 
 # 2. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list у которых первый символ - буква "a".
 
 
-# new_list = []
-# for symbol in my_list:
-#     if 'a' == symbol[0]:
-#         new_list.append(symbol)
-# print(new_list)
+new_list = []
+for symbol in my_list:
+    if 'a' == symbol[0]:
+        new_list.append(symbol)
+print(new_list)
 
 
 # 3. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list в которых есть символ - буква "a" на любом месте.
 
 
-# new_list = []
-# for symbol in my_list:
-#     if 'a' in symbol:
-#         new_list.append(symbol)
-# print(new_list)
-#
+new_list = []
+for symbol in my_list:
+    if 'a' in symbol:
+        new_list.append(symbol)
+print(new_list)
+
 
 # 4) Дан список словарей persons в формате [{"name": "John", "age": 15}, ... ,{"name": "Jack", "age": 45}]
 # а) Создать список и поместить туда имя самого молодого человека. Если возраст совпадает - поместить все имена самых молодых.
